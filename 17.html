@@ -7,18 +7,15 @@
     <title>Document</title>
     <script src="code.jquery.com_jquery-3.7.0.js"></script>
     <script>
-        $(document).ready(function(){
-            var text = $('h1').text();  // 모든 h1태그의 text를 반환
-            var html = $('h1').html();  // 첫번째 h1 태그의 text를 반환
-
-            alert(text);
-            alert(html);
+        $(document).ready(function(){ 
+            $('a').click(function(event){
+            alert("클릭확인")
+            // 기본 이벤트를 막는 역할
+            event.preventDefault();})
         })
     </script>
 </head>
 <body>
-    <h1>인공지능 소프트웨어</h1>
-    <h1>1학년 1학기</h1>
+    <a href="http://www.naver.com">네이버 홈페이지</a>
 </body>
 </html>
-     
